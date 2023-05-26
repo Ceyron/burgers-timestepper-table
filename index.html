@@ -64,6 +64,30 @@ MathJax = {
       \nu \mathcal{L}(u_h^{[t]})
     $</td>
   </tr>
+  <tr>
+    <td><b>Implicit Methods with Picard</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Picard One-Step</td>
+    <td>$
+      \frac{u_h^{[t+1]} - u_h^{[t]}}{\Delta t}
+      +
+      \mathcal{U}(u_h^{[t+1]}; u_h^{[t]}, u_h^{[t]},true)
+      =
+      \nu \mathcal{L}(u_h^{[t+1]})
+    $</td>
+  </tr>
+  <tr>
+    <td>Picard converged</td>
+    <td>$
+      \frac{u_h^{[t+1][k+1]} - u_h^{[t]}}{\Delta t}
+      +
+      \mathcal{U}(u_h^{[t+1][k+1]}; u_h^{[t+1][k]}, u_h^{[t+1][k]},true)
+      =
+      \nu \mathcal{L}(u_h^{[t+1][k+1]})
+    $</td>
+  </tr>
   </tbody>
 </table> 
 
